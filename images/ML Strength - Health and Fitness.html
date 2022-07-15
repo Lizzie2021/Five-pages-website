@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:8080/form.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ML Strength - Health and Fitness_files/styles.css">
+    <link rel="stylesheet" href="./ML Strength - Health and Fitness_files/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="./ML Strength - Health and Fitness_files/jquery.min.js"></script>
+
+    <title>ML Strength - Health and Fitness</title>
+  </head>
+  <body>
+    <header><nav>
+  <ul>
+    <li><a href="http://127.0.0.1:8080/index.html">Home</a></li>
+    <li><a href="http://127.0.0.1:8080/about.html">About Us</a></li>
+    <li><a href="http://127.0.0.1:8080/class.html">Classes</a></li>
+    <li><a href="http://127.0.0.1:8080/form.html">Join Us</a></li>
+    <li><a href="http://127.0.0.1:8080/owner.html">Owner Story</a></li>
+  </ul>
+</nav>
+</header>
+    <section id="join-us">
+      <form>
+        <div class="fname">
+          <label for="fname" class="required">First Name:</label>
+          <input type="text" name="fname" id="fname" placeholder="Your First Name" pattern="^[^-\s][a-zA-Z_\s-]+$" title="Only contains a-z, A-Z, - , _ and whitespace." required="">
+          <div class="errMessage"></div>
+        </div>
+
+        <div class="lname">
+          <label for="lname" class="required">Last Name:</label>
+          <input type="text" name="lname" id="lname" placeholder="Your Last Name" pattern="^[^-\s][a-zA-Z0-9_\s-]+$" title="Only contains a-z, A-Z, - , _ and whitespace." required="">
+          <div class="errMessage"></div>
+        </div>
+
+        <div class="email">
+          <label for="email" class="required">Email Address:</label>
+          <input type="email" name="email" id="email" placeholder="Your Email Address" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required="">
+          <div class="errMessage"></div>
+        </div>
+        <div class="phone">
+          <label for="phone" class="required">Phone Number:</label>
+          <input type="tel" name="tel" id="phone" placeholder="Your Phone Number" maxlength="20" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" title="Please input 10 digit phone number." required="">
+          <div class="errMessage"></div>
+        </div>
+
+        <div class="location">
+          <label for="location">Choose a location: </label>
+          <select id="location">
+            <option hidden="" disabled="" selected="" value="">
+              -- select an option --
+            </option>
+            <option value="Ashgrove">Ashgrove</option>
+            <option value="Brisbane City">Brisbane City</option>
+            <option value="Chermside">Chermside</option>
+            <option value="Graceville">Graceville</option>
+            <option value="Westlake">Westlake</option>
+          </select>
+        </div>
+        <div class="comment">
+          <label for="comments">Message:</label>
+          <textarea name="comments" id="comments" placeholder="Please leave your message... " cols="30" rows="10"></textarea>
+        </div>
+
+        <span>Fields marked with a '*' are required!</span>
+        <div class="checkbox">
+          <input type="checkbox" id="checkbox" required="">
+          <label for="checkbox">I agree to the Terms &amp; Conditions. </label>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+        <a href="http://127.0.0.1:8080/form.html#" class="help">Help</a>
+        <i class="fa-solid fa-xmark close-icon show-close-icon"></i>
+        <video controls="" class="show">
+          <source src="images/video.mp4" type="video/mp4">
+          Your browser does not support HTML video.
+        </video>
+      </form>
+    </section>
+    <footer><p>© Copyright 2022 by Uptown IT</p>
+</footer>
+    <script src="./ML Strength - Health and Fitness_files/jquery.js"></script>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+
+
+</body></html>

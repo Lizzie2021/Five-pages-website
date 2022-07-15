@@ -1,0 +1,19 @@
+<nav>
+  <ul id="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="class.html">Classes</a></li>
+    <li><a href="owner.html">Owner Story</a></li>
+    <li><a href="form.html" class="join">Join Us</a></li>
+  </ul>
+  <em class="fa-solid fa-bars list-icon"></em>
+</nav>
+<script>
+  $(".list-icon").on("click", function () {
+    if ($("#navbar").hasClass("show-nav")) {
+      $("#navbar").removeClass("show-nav");
+    } else {
+      $("#navbar").addClass("show-nav");
+    }
+  });
+</script>

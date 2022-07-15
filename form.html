@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>ML Strength - Health and Fitness</title>
+  </head>
+  <body>
+    <header></header>
+    <section id="join-us">
+      <form>
+        <div class="fname">
+          <label for="fname" class="required">First Name:</label>
+          <em class="fa-solid fa-user input-icon"></em>
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            placeholder="Your First Name"
+            pattern="^[^-\s][a-zA-Z_\s-]+$"
+            title="Only contains a-z, A-Z, - , _ and whitespace."
+            required
+          />
+          <div class="errMessage"></div>
+        </div>
+
+        <div class="lname">
+          <label for="lname" class="required">Last Name:</label>
+          <em class="fa-solid fa-user input-icon"></em>
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            placeholder="Your Last Name"
+            pattern="^[^-\s][a-zA-Z0-9_\s-]+$"
+            title="Only contains a-z, A-Z, - , _ and whitespace."
+            required
+          />
+          <div class="errMessage"></div>
+        </div>
+
+        <div class="email">
+          <label for="email" class="required">Email Address:</label>
+          <em class="fa-solid fa-envelope input-icon"></em>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email Address"
+            pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+            required
+          />
+          <div class="errMessage"></div>
+        </div>
+        <div class="phone">
+          <label for="phone" class="required">Phone Number:</label>
+          <em class="fa-solid fa-phone input-icon"></em>
+          <input
+            type="tel"
+            name="tel"
+            id="phone"
+            placeholder="Your Phone Number"
+            maxlength="20"
+            pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
+            title="Please input 10 digit phone number."
+            required
+          />
+          <div class="errMessage"></div>
+        </div>
+
+        <div class="location">
+          <label for="location">Choose a location: </label>
+          <select id="location">
+            <option hidden disabled selected value>
+              -- select an option --
+            </option>
+            <option value="Ashgrove">Ashgrove</option>
+            <option value="Brisbane City">Brisbane City</option>
+            <option value="Chermside">Chermside</option>
+            <option value="Graceville">Graceville</option>
+            <option value="Westlake">Westlake</option>
+          </select>
+        </div>
+        <div class="comment">
+          <label for="comments">Message:</label>
+          <textarea
+            name="comments"
+            id="comments"
+            placeholder="Please leave your message... "
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <span class="notation">Fields marked with a '*' are required!</span>
+        <div class="checkbox">
+          <input type="checkbox" id="checkbox" required />
+          <label for="checkbox">I agree to the Terms & Conditions. </label>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+        <a href="#" class="help">Help</a>
+        <em class="fa-solid fa-xmark close-icon"></em>
+        <video controls>
+          <source src="images/video.mp4" type="video/mp4" />
+          Your browser does not support HTML video.
+        </video>
+      </form>
+    </section>
+    <footer></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+  </body>
+</html>
