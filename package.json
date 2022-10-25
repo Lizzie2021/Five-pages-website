@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Lizzie2021/Five-pages-website#readme",
   "dependencies": {
+    "live-server": "^1.2.2",
     "parcel": "^2.7.0"
   }
 }
