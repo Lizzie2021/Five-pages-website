@@ -1,0 +1,24 @@
+{
+  "name": "at3_website_li_471668507",
+  "version": "1.0.0",
+  "description": "business website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lizzie2021/Five-pages-website.git"
+  },
+  "author": "Lizzie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lizzie2021/Five-pages-website/issues"
+  },
+  "homepage": "https://github.com/Lizzie2021/Five-pages-website#readme",
+  "dependencies": {
+    "parcel": "^2.7.0"
+  }
+}
