@@ -314,7 +314,7 @@ section#join-us {
   padding-bottom: 80px;
   height: -webkit-max-content;
   height: -moz-max-content;
-  height: max-content;
+  height: 100vh;
 }
 
 section#join-us form {
